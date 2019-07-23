@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import os
 import tensorflow as tf
-print(os.listdir("/home/phd/Desktop/datasets/chest-xray/images"))
+
 import keras
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 config = tf.ConfigProto( device_count = {'GPU': 1 , 'CPU': 56} ) 
 sess = tf.Session(config=config) 
 keras.backend.set_session(sess)
-dataset = '/home/phd/Desktop/datasets/Bullet_dataset'
+dataset = '/path/Bullet_dataset'
 modd = 'bullet.model'
 label = 'mlb.pickle'
 plot = 'BulletPlot.png'
